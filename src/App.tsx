@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setIsModalOpen(true)}>Open Comments</button>
+      <button className="text-white" onClick={() => setIsModalOpen(true)}>Open Comments</button>
       <ToastContainer />
       <ModalCheckComments
         isModalOpen={isModalOpen}
