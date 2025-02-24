@@ -30,13 +30,16 @@ jobs:
         env:
           CI: false
 
+      - name: List build directory
+        run: ls -la dist
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: dist/
 
   deploy:
     needs: build
